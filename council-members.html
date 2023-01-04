@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minneapolis City Council Members</title>
+</head>
+	<h2>Minneapolis City Council Members</h2>
+<body>
+<script>
+
+var council = [
+	['Elliott Payne'],
+	['Robin Wonsley'],
+	['Michael Rainville'],
+	['LaTrisha Vetaw'],
+	['Jeremiah Ellison'],
+	['Jamal Osman'],
+	['Lisa Goodman'],
+	['Andrea Jenkins'],
+	['Jason Chavez'],
+	['Aisha Chughtai'],
+	['Emily Koski'],
+	['Andrew Johnson'],
+	['Linea Palmisano']
+]; // enter council member names here.
+var urls = [
+	['https://www.minneapolismn.gov/government/city-council/ward-1/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-2/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-3/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-4/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-5/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-6/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-7/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-8/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-9/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-10/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-11/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-12/'],
+	['https://www.minneapolismn.gov/government/city-council/ward-13/']
+]; // enter links to the council member pages here.
+
+// Since the length property of both the council and urls array is the same, you can use either array length as the for loop condition.
+for (let i = 0; i <= council.length; i++) {
+	// concatonate the the Ward Number, Council Member Name with Link here.
+	document.write('<div><strong> Ward '+ (i+1) + '</strong> '+ '<a href="' + urls[i] + '">' + council[i][0] + '</a></div>')
+	// hint: you can use (i+1) in parenthesis for the ward number as long as your council members are entered into the council array in the order of their ward.
+}
+
+</script>
+</body>
+</html>
